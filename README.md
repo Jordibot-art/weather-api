@@ -31,7 +31,25 @@ to pull(members only not owner of the GitHub rep)
 
 1. Fork it and copy https and go to the terminal
 
+copy only exist on GitHub so we pull it to become our local
 2. git clone (https), and then change directory into the project eg 
 cd Test-Repo
 
-3.
+3. git checkout -b new_branch
+
+4. git branch
+
+5. vim select (file you want to alter eg.) hello.py
+
+6. git status see modified change
+
+7. stage change. git add hello.py
+
+8. git commit -m "Updated print statement"
+
+9. push your code back to GitHub
+git push --set-upstream orgin new_branch
+
+10. go to pull request tab
+then new pull request next
+merge branch in the right
