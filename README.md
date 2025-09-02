@@ -1,3 +1,7 @@
+This web application allows users to check the current weather for any city by entering the city name in a search box.
+Upon submitting the form, it fetches weather data from OpenWeather API, displaying the temperature and weather description. 
+If the city is invalid or an error occurs, it provides an error message. It's a simple, user-friendly interface for accessing weather information.
+
 dont forget to change directory to your api folder
 
 1 install FastAPI and Uvicorn and dependencies for html templates and fetch openweather api using terminal
