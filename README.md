@@ -20,6 +20,8 @@ echo "# prac" >> README.md
 git init
 git add README.md
 
+git add .
+
 2.
 git commit -m "first commit"
 git branch -M main
@@ -33,23 +35,26 @@ to pull(members only not owner of the GitHub rep)
 
 copy only exist on GitHub so we pull it to become our local
 2. git clone (https), and then change directory into the project eg 
+
 cd Test-Repo
 
 3. git checkout -b new_branch
 
-4. git branch
+4. code index.html
 
-5. vim select (file you want to alter eg.) hello.py
+5. git add .
 
-6. git status see modified change
+6. git commit -m "Update Print Statement"
 
-7. stage change. git add hello.py
+7. git status
 
-8. git commit -m "Updated print statement"
-
-9. push your code back to GitHub
-git push --set-upstream orgin new_branch
+8. git push origin new_branch
 
 10. go to pull request tab
 then new pull request next
 merge branch in the right
+
+
+
+
+
