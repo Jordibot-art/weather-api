@@ -1,4 +1,4 @@
-dotn for get to change directory to your api folder
+dont forget to change directory to your api folder
 
 1 install FastAPI and Uvicorn and dependencies for html templates and fetch openweather api using terminal
 "pip install fastapi uvicorn"
