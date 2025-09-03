@@ -10,6 +10,8 @@ dotn for get to change directory to your api folder
 
 4 open http://127.0.0.1:8000
 
+---
+
 push the API to the GitHub
 (you must first install git)
 
