@@ -1,4 +1,18 @@
-dotn for get to change directory to your api folder
+Weather Checker
+A FastAPI-based application that fetches real-time weather data from the OpenWeather API and provides it through an HTML interface and a JSON API endpoint.
+
+---
+Features
+
+GET endpoint to get weather by city.
+Returns data in JSON or HTML format.
+Shows city, temperature, and weather description.
+Easy to run locally with FastAPI.
+
+--
+Installation/setup instructions
+
+dont forget to change directory to your api folder
 
 1 install FastAPI and Uvicorn and dependencies for html templates and fetch openweather api using terminal
 "pip install fastapi uvicorn"
@@ -30,8 +44,9 @@ git branch -M main
 git remote add origin https://github.com/Jordibot-art/prac.git
 git push -u origin main
 
+--
 
-to pull(members only not owner of the GitHub rep)
+to pull repo and alter the file and merge it
 
 1. copy https and go to the terminal
 
@@ -55,3 +70,16 @@ cd Test-Repo
 10. go to pull request tab
 then new pull request next
 merge branch in the right
+
+---
+Request
+GET /api/weather?city=city_name
+
+Response
+{
+  "city": "Cebu",
+  "temperature": 28.9,
+  "description": "few clouds"
+}
+
+
