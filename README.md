@@ -76,10 +76,12 @@ Request
 GET /api/weather?city=city_name
 
 Response
+
 {
   "city": "Cebu",
   "temperature": 28.9,
   "description": "few clouds"
 }
+
 
 
