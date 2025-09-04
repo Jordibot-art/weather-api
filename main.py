@@ -1,4 +1,4 @@
-from fastapi import FastAPI, Request
+from fastapi import FastAPI, Request, Query
 from fastapi.responses import HTMLResponse
 from fastapi.templating import Jinja2Templates
 import requests
@@ -6,7 +6,6 @@ import requests
 app = FastAPI()
 templates = Jinja2Templates(directory="templates")
 
-# Your OpenWeather API key
 API_KEY = "b6e1129212951e2c500286d8f69c0028"
 
 @app.get("/", response_class=HTMLResponse)
@@ -30,7 +29,12 @@ def get_weather(request: Request, city: str):
     return templates.TemplateResponse("index.html", {"request": request, "weather": weather})
 
 @app.get("/api/weather")
-def api_weather(city: str):
+def api_weather(city: str = Query(..., example="Manila")):
     url = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={API_KEY}&units=metric"
-    response = requests.get(url)
-    return response.json()
+    response = requests.get(url).json()
+
+    return {
+        "city": response["name"],
+        "temperature": response["main"]["temp"],
+        "description": response["weather"][0]["description"]
+    }
